@@ -7,24 +7,22 @@ $(document).ready(function(){
         $(this).find('.card-img-top').removeClass('scaled');
     });
 
-    $('.card').magnificPopup({
-        items: [
-            {
-                src: 'images/lake/001.JPG'
-            },
-            {
-                src: 'images/lake/002.JPG'
-            },
-            {
-                src: 'images/lake/003.JPG'
-            }
-        ],
+    var defaultPopUp = {
+        items: [],
         gallery: {
             enabled: true
         },
         type: 'image',
         removalDelay: 300,
         mainClass: 'mfp-fade'
-    });
+    }
+
+    var familyPopUp = defaultPopUp;
+    for (i = 1; i < 16; i++){
+        let source = 'images/family/' + i + '.jpg';
+        familyPopUp.items.push({ src : source});
+    }
+
+    $('#family').magnificPopup(familyPopUp);
 
 });
