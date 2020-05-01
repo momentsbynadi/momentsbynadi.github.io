@@ -108,11 +108,28 @@
     opacity: 0;
   }
 
+#wrapper {
+    padding: 0 20px;
+}
+
+#description {
+    margin-top: 40px;
+    text-indent: 40px;
+}
+
 
 
 @media only screen and (min-width: 500px){
     #wrapper{
         width: 80%;
         margin: 0 auto;
+    }
+
+    #nadya{
+        width:50%;
+    }
+
+    #description {
+        width:75%;
     }
 }

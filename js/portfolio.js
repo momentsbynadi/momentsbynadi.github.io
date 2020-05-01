@@ -7,7 +7,7 @@ $(document).ready(function(){
         $(this).find('.card-img-top').removeClass('scaled');
     });
 
-    var defaultPopUp = {
+    var familyPopUp = {
         items: [],
         gallery: {
             enabled: true
@@ -16,13 +16,26 @@ $(document).ready(function(){
         removalDelay: 300,
         mainClass: 'mfp-fade'
     }
-
-    var familyPopUp = defaultPopUp;
     for (i = 1; i < 16; i++){
-        let source = 'images/family/' + i + '.jpg';
+        let source = 'images/family/' + i + '.JPG';
         familyPopUp.items.push({ src : source});
     }
 
+    var pregnancyPopUp = {
+        items: [],
+        gallery: {
+            enabled: true
+        },
+        type: 'image',
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    }
+    for (i = 1; i < 18; i++){
+        let source = 'images/pregnancy/' + i + '.JPG';
+        pregnancyPopUp.items.push({ src : source});
+    }
+
     $('#family').magnificPopup(familyPopUp);
+    $('#pregnancy').magnificPopup(pregnancyPopUp);
 
 });
