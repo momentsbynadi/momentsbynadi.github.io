@@ -20,6 +20,18 @@
 .scaled-pic {
     overflow: hidden;
 }
+
+/*PORTFOLIO STYLES*/
+#categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width:43%;
+    margin: 0 10px 10px 10px;
+}
 .card-img-top {
     transition: all 0.5s;
 }
@@ -28,9 +40,13 @@
 }
 .card-body {
     z-index: 1;
+    padding: 1rem;
 }
 .card:hover {
     cursor: pointer;
+}
+.card-title {
+    margin: 0;
 }
 
 /* PACKAGES STYLES */
@@ -146,5 +162,15 @@
 
     #description {
         width:75%;
+    }
+
+    .card {
+        width: 30%;
+    }
+    .card-body{
+        padding: 1.25rem;
+    }
+    .card-title {
+        margin-bottom: 8px;
     }
 }
