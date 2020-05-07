@@ -29,8 +29,8 @@
     justify-content: center;
 }
 .card {
-    width:43%;
-    margin: 0 10px 10px 10px;
+    width:45%;
+    margin: 0 8px 10px 8px;
 }
 .card-img-top {
     transition: all 0.5s;
@@ -47,6 +47,7 @@
 }
 .card-title {
     margin: 0;
+    font-size: 1rem;
 }
 
 /* PACKAGES STYLES */
@@ -141,11 +142,16 @@
     padding: 0 20px;
 }
 
+
+/*DESCRIPTION STYLES*/
 #description {
     margin-top: 40px;
     text-indent: 40px;
     text-align: justify;
     font-size: 1.1em;
+}
+#insta-logo {
+    width: 40%;
 }
 
 
@@ -172,5 +178,9 @@
     }
     .card-title {
         margin-bottom: 8px;
+        font-size:1.25rem;
+    }
+    #insta-logo {
+        width: 100px;
     }
 }
