@@ -1,0 +1,99 @@
+#wrapper {
+    padding: 0 10px;
+}
+
+#postcard {
+    background-color: white;
+    border: 10px solid;
+    border-image: url('../images/postcard_border.jpg');
+    border-image-slice: 20 22;
+    border-image-repeat: repeat;
+    height: 280px;
+
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#postcard-title {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2em;
+    color: lightslategray;
+    font-family: 'Special Elite', cursive;
+}
+
+#postcard-stamp {
+    position: absolute;
+    right:20px;
+    top: 20px;
+
+    border: 7px solid lightslategray;
+    border-image: url('../images/stamp-border.gif');
+    border-image-slice: 40 42;
+    border-image-repeat: stretch;
+
+    width: 50px;
+    height: 60px;
+}
+
+#postcard-content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.postcard-section {
+    height: 160px;
+    padding-top: 10px;
+    width: 50%;
+    border-left: 3px solid lightslategray;
+}
+
+.postcard-text {
+    border-bottom: 2px solid lightslategray;
+    padding-top: 10px;
+    margin: 0 10px;
+}
+
+.postcard-value {
+    font-family: 'Sriracha', cursive;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+
+.postcard-property {
+    font-family: 'Special Elite', cursive;
+    color: lightslategray;
+    text-align: left;
+    padding: 0;
+    border-bottom: 2px solid lightslategray;
+}
+
+@media only screen and (min-width: 500px) {
+    #postcard {
+        width: 60%;
+        height: 400px;
+    }
+    .postcard-section{
+        padding-top: 100px;
+        width: 50%;
+        border-left: 3px solid lightslategray;
+        height: 260px;
+    }
+    .postcard-text {
+        margin: 0 10%;
+    }
+    .postcard-property{
+        text-align: right;
+        border: none;
+    }
+    .postcard-value{
+        padding: 0 15px;
+        font-size: 1.1em;
+    }
+    #postcard-stamp {
+        width: 10%;
+        height: 100px;
+    }
+
+}
