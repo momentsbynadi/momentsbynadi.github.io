@@ -16,9 +16,23 @@ $(document).ready(function(){
         removalDelay: 300,
         mainClass: 'mfp-fade'
     }
-    for (i = 1; i < 16; i++){
+    for (i = 1; i <= 18; i++){
         let source = 'images/family/' + i + '.JPG';
         familyPopUp.items.push({ src : source});
+    }
+
+    var kidsPopUp = {
+        items: [],
+        gallery: {
+            enabled: true
+        },
+        type: 'image',
+        removalDelay: 300,
+        mainClass: 'mfp-fade'
+    }
+    for (i = 1; i <= 14; i++){
+        let source = 'images/kids/' + i + '.JPG';
+        kidsPopUp.items.push({ src : source});
     }
 
     var pregnancyPopUp = {
@@ -30,12 +44,13 @@ $(document).ready(function(){
         removalDelay: 300,
         mainClass: 'mfp-fade'
     }
-    for (i = 1; i < 18; i++){
+    for (i = 1; i <= 12; i++){
         let source = 'images/pregnancy/' + i + '.JPG';
         pregnancyPopUp.items.push({ src : source});
     }
 
     $('#family').magnificPopup(familyPopUp);
     $('#pregnancy').magnificPopup(pregnancyPopUp);
+    $('#kids').magnificPopup(kidsPopUp);
 
 });

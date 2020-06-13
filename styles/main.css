@@ -49,6 +49,9 @@
     margin: 0;
     font-size: 1rem;
 }
+#individual{
+    font-size: 0.85rem;
+}
 
 /* PACKAGES STYLES */
 .pack {
@@ -182,5 +185,8 @@
     }
     #insta-logo {
         width: 100px;
+    }
+    #individual{
+        font-size: 1.25rem;
     }
 }
